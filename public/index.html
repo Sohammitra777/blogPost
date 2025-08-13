@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Post</title>
+</head>
+<body>
+    <div class="heading">
+        <h2>Blog Post</h2>
+    </div>
+    
+    <div class="form-div">
+        <form action="http://localhost:3000/submit" method="POST">
+            <!--Title part-->
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title" required placeholder="Enter the title"><br><br>
+
+            <!--Middle part-->
+            <label for="body">Enter Your thoughts</label><br>
+            <textarea id="body" name="body" maxlength="250" placeholder="Write here....(max 250 character allowed)" required></textarea><br>
+             
+            <!--Reset and Submission-->
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="posting-div" id="post-here">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
