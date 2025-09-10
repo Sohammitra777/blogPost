@@ -1,5 +1,6 @@
+const users = {};
 
-exports.getUser = (req, res) => {
+export const getUser = (req, res) => {
     if (Object.keys(users).length === 0) return res.send({valueExist : false}); 
     res.send({
        valueExist : true,
@@ -7,7 +8,7 @@ exports.getUser = (req, res) => {
     })
 }
 
-exports.postUser = (req, res) => {
+export const postUser = (req, res) => {
     const keys = Object.keys(users);
     const key = Math.max(...keys.map(Number), 0) + 1;
  
@@ -17,7 +18,7 @@ exports.postUser = (req, res) => {
     res.redirect('/'); 
 }
 
-exports.patchUser = (req, res) => {
+export const patchUser = (req, res) => {
     const index = req.params.id; 
     const toUpdate = req.body; 
     
@@ -30,7 +31,7 @@ exports.patchUser = (req, res) => {
     })
 }
 
-exports.putUser = (req, res) => {
+export const putUser = (req, res) => {
     const index = req.params.id; 
     const toUpdate = req.body; 
 
@@ -42,7 +43,7 @@ exports.putUser = (req, res) => {
     })
 }
 
-exports.deleteUser = (req, res) => {
+export const deleteUser = (req, res) => {
     const index = req.params.id; 
 
     if(!users[index]) return res.status(404).send({message : "User not found"});
