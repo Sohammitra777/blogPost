@@ -63,7 +63,7 @@ It’s a beautifully designed blog post website where users can create, update, 
 
 Run the server using:  
 ```bash
-node app.js
+npm run dev
 ```
 
 Then open your browser and go to:  
