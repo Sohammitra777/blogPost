@@ -63,7 +63,12 @@ It’s a beautifully designed blog post website where users can create, update, 
 
 Run the server using:  
 ```bash
-npm run dev
+npm run build
+```
+
+Run the server perpetually using:  
+```bash
+npm run build
 ```
 
 Then open your browser and go to:  
