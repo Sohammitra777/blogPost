@@ -68,7 +68,7 @@ npm run build
 
 Run the server perpetually using:  
 ```bash
-npm run build
+npm run dev
 ```
 
 Then open your browser and go to:  
