@@ -1,6 +1,9 @@
-const url = "https://blogpost-dori.onrender.com" 
+const url = "http://localhost:3000" 
 
-
+setInterval(() => {
+    window.location.reload();
+    alert("5 minute passed"); 
+}, 5*60*1000);
 //Patch Function
 function patchFunction(user_id, titleText, bodyText){
     return fetch(url + '/users/' + user_id, {

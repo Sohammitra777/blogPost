@@ -1,8 +1,7 @@
-const users = {};
+let users = {};
 
 setInterval(() => {
-    users = {}; 
-    alert("All data will be removed in 5 minute as this is hobby project, Thank you for you time for checking this out"); 
+    users = {};
 }, 5*60*1000);
 
 export const getUser = (req, res) => {
