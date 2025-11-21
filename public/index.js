@@ -1,5 +1,6 @@
-const url = "http://localhost:3000"; 
+const url = "https://blogpost-dori.onrender.com" 
 
+console.log(url)
 //Patch Function
 function patchFunction(user_id, titleText, bodyText){
     return fetch(url + '/users/' + user_id, {
