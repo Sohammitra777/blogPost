@@ -20,25 +20,25 @@ html, body {
 }
 
 #title, #body{
-    width : 600px; 
+    width : 550px; 
     background-color: #a0522d;
     font-size: 20px;
     border-radius: 10px;
     color : white;
     border : 0px; 
+    padding: 1rem;
 }
 
 input::placeholder, textarea::placeholder{
     color : burlywood; 
-    padding: 1rem
 }
 
 #title {
-    height : 40px; 
+    height : 30px; 
     
 }
 #body { 
-    height: 150px; 
+    height: 120px; 
 }
 
 /*posting div*/
@@ -86,4 +86,32 @@ button:active, input[type="submit"]:active, input[type="reset"]:active{
 .change{
     border : 2px solid #332414;
     border-radius: 10px;
+}
+
+.note-card {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 16px;
+    background-color: #fff8db;
+    border-left: 4px solid #d4a017;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.note-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a17700;
+}
+
+.note-card ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #6b4f00;
+}
+
+.note-card ul li {
+    margin-bottom: 6px;
+    line-height: 1.4;
 }
